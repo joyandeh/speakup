@@ -1,12 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="fa">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/speakup/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/speakup/pwa-icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-react-app</title>
-    <script type="module" crossorigin src="/speakup/assets/index-pNyouec8.js"></script>
-    <link rel="stylesheet" crossorigin href="/speakup/assets/index-nYhXcfHt.css">
+    <meta name="theme-color" content="#f7f5f2" />
+    <title>کلاس من</title>
+    <script>
+      ;(() => {
+        const stored = localStorage.getItem('theme-mode') || 'system'
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        const resolved =
+          stored === 'system' ? (prefersDark ? 'dark' : 'light') : stored
+        document.documentElement.setAttribute('data-theme', resolved)
+      })()
+    </script>
+    <script type="module" crossorigin src="/speakup/assets/index-M1b7OmL0.js"></script>
+    <link rel="stylesheet" crossorigin href="/speakup/assets/index-ajlD3nmg.css">
   <link rel="manifest" href="/speakup/manifest.webmanifest"></head>
   <body>
     <div id="root"></div>

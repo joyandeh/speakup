@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="App Icon Maskable">
+  <rect width="512" height="512" fill="#1a1a18"/>
+  <rect x="48" y="48" width="416" height="416" rx="140" fill="#f7f5f2"/>
+  <path d="M256 140l92 250h-184l92-250z" fill="#ffb347"/>
+</svg>
